@@ -14,7 +14,7 @@ btn.addEventListener("click", async () => {
 });
 
 function displayData(data) {
-    document.getElementById("kanye-pic").src=`kanye${4}.png`;  
+    document.getElementById("kanye-pic").src=`kanye${Math.floor(Math.random() * 4) + 1 }.png`;  
   img.classList.add("shake-img");
   const { quote } = data;
   content.textContent = quote;
