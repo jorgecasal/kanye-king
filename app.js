@@ -15,7 +15,6 @@ btn.addEventListener("click", async () => {
 function displayData(data) {
   const randomPic = Math.floor(Math.random() * 9) + 1;
   document.getElementById("kanye-pic").src=`kanye${randomPic}.png`;  
-  console.log(randomPic);
   img.classList.add("shake-img");
   const { quote } = data;
   content.textContent = `"${quote}"`;
