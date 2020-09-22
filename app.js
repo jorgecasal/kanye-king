@@ -6,10 +6,9 @@ btn.addEventListener("click", async () => {
   try {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data);
     displayData(data);
   } catch (error) {
-    console.log(error);
+    displayData({quote: `Oops, we have a connection problem. Please come back later for some Kanye knowledge... ${error}`});
   }
 });
 
