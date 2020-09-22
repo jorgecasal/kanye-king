@@ -14,12 +14,14 @@ btn.addEventListener("click", async () => {
 });
 
 function displayData(data) {
-    document.getElementById("kanye-pic").src=`kanye${Math.floor(Math.random() * 4) + 1 }.png`;  
+  const randomPic = Math.floor(Math.random() * 9) + 1;
+  document.getElementById("kanye-pic").src=`kanye${randomPic}.png`;  
+  console.log(randomPic);
   img.classList.add("shake-img");
   const { quote } = data;
-  content.textContent = quote;
-  const random = Math.random() * 1000;
+  content.textContent = `"${quote}"`;
+  const randomTime = Math.random() * 1000;
   setTimeout(() => {
     img.classList.remove("shake-img");
-  }, random);
+  }, randomTime);
 }
