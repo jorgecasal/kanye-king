@@ -65,64 +65,29 @@ p {
   margin-bottom: 1.25rem;
   color: #7c7c7c;
 }
+
 @media screen and (min-width: 800px) {
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
   body {
     font-size: 1rem;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
   }
 }
 
 .btn {
-  text-transform: uppercase;
-  background: var(--clr-white);
-  color: var(--clr-primary-5);
-  padding: 1rem 1rem;
-  letter-spacing: var(--spacing);
-  display: block;
-  transition: var(--transition);
-  font-size: 0.875rem;
-  border: 2px solid var(--clr-primary-5);
-  cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: var(--radius);
-}
+	font-family: 'Russo One', sans-serif;
+	background-color: black;
+	border: 2px solid black;
+	color: white;
+	padding: 12px 30px;
+	cursor: pointer;
+	font-size: 20px;
+	margin-left: auto;
+    margin-right: auto;
+}  
 
 .btn:hover {
-  color: var(--clr-white);
-  background: var(--clr-primary-5);
-}
-
-.section {
-  padding: 5rem 0;
-}
-
-.section-center {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1170px;
-}
-
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-  }
+	border: 1px solid black;
+	background-color: white;
+	color: black;
 }
 
 @keyframes shake {
